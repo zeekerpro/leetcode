@@ -1,3 +1,9 @@
+=begin
+其实就是一个队列,比如例题中的 abcabcbb，进入这个队列（窗口）为 abc 满足题目要求，当再进入 a，队列变成了 abca，这时候不满足要求。所以，只要把队列的左边的元素移出就行了，直到满足题目要求！
+一直维持这样的队列，找出队列出现最长的长度时候，求出解！
+=end
+
+
 def length_of_longest_substring(s)
   result = 0
   queueStr = String.new 
